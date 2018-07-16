@@ -1,0 +1,115 @@
+/*公共样式*/
+body{
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+a:hover{
+  text-decoration: none;
+}
+
+/*头部样式*/
+#header{
+
+}
+#header .topbar{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+#header .topbar .container div + div{
+	border-left: 1px solid #ccc;
+}
+#header .topbar .container .wjs_M a{
+	position: relative;
+}
+#header .topbar .container .wjs_M img{
+	display: none;
+	top: 15px;
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+
+}
+#header .topbar .container .wjs_M a:hover img{
+	display: block;
+	z-index: 1001;
+}
+#header .topbar .container .question a{
+	padding: 0 10px;
+}
+/*头部样式*/
+
+/*广告轮播*/
+#main-ad .carousel-inner .item{
+	height: 410px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+
+/*广告轮播*/
+
+
+
+
+/*更改的bootstrap样式*/
+.navbar-colin {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+.navbar-colin .navbar-brand {
+  color: #777;
+}
+.navbar-colin .navbar-brand:hover,
+.navbar-colin .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-colin .navbar-text {
+  color: #777;
+}
+.navbar-colin .navbar-nav > li > a {
+  color: #777;
+}
+.navbar-colin .navbar-nav > li > a:hover,
+.navbar-colin .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom: 2px solid #e92322;
+}
+.navbar-colin .navbar-nav > .active > a,
+.navbar-colin .navbar-nav > .active > a:hover,
+.navbar-colin .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+  border-bottom: 2px solid #e92322;
+}
+.navbar-colin .navbar-nav > .disabled > a,
+.navbar-colin .navbar-nav > .disabled > a:hover,
+.navbar-colin .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-colin .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-colin .navbar-toggle:hover,
+.navbar-colin .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-colin .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-colin .navbar-collapse,
+.navbar-colin .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-colin .navbar-nav > .open > a,
+.navbar-colin .navbar-nav > .open > a:hover,
+.navbar-colin .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+/*更改的bootstrap样式*/

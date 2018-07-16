@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<mata name="viewport" content="width=device-width,initial-scale=1.0 userscalable=no">
+	<title>微金所</title>
+	<!-- 引入bootstrap样式表文件 -->
+	<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+	<!-- [if lt IE9] 
+		<script src="lib/html5shiv/html5shiv.js"></script>
+		<script src="lib/respond/respond.min.js"></script>
+	 [end if] -->
+	 <link rel="stylesheet" href="css/main.css">
+	 
+</head>
+<body>
+	<!-- 头部区域 -->
+	<header id="header">
+		<!-- <div class="topbar hidden-sm hidden-xs"> -->
+		<!-- 上下这两句话的意思相同,小屏幕隐藏topbar导航条,大屏幕展示 -->
+		<div class="topbar visible-md visible-lg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 text-center">
+						<a href="#" class="mobile-link">
+							<i class="icon-mobilephone"></i>
+							<span>手机微金所</span>
+							<i class="glyphicon glyphicon-chevron-down"></i>
+							<img src="img/c_06.jpg" alt="扫描二维码">
+						</a>
+					</div>
+					<div class="col-md-5 text-center" >
+						<i class="icon-telephone"></i>
+						<span>4006-986-4289 (服务时间:9:00-18:00)</span>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="#">常见问题</a>
+						<a href="#">财富登录</a>
+					</div>
+					<div class="col-md-2 text-center">
+							<!-- 引用bootsCss里面的按钮样式 -->
+						  <a href="#"class="btn btn-danger btn-sm">立即注册</a>
+							<a href="#" class="btn btn-link btn-sm  btn-primary btn-lg" data-toggle="modal" data-target="#login_form">登录</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-colin navbar-static-top" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+  			<div class="container">
+    			<div class="navbar-header">
+    			<!-- 面包按钮 -->
+    				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navdisplay" aria-expanded="false">
+        				<span class="sr-only">显示/隐藏</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+     				</button>
+    				<a href="#" class="navbar-brand">
+    					<i class="icon-icon"></i>
+    					<i class="icon-logo"></i>
+    				</a>
+    			</div>
+    			<div class="navdisplay collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    				<ul class="nav navbar-nav">
+        		    	<li class="active"><a href="#">我要投资</a></li>
+        		    	<li><a href="#">我要借款</a></li>
+        		    	<li><a href="#">平台介绍</a></li>
+        		    	<li><a href="#">新手专区</a></li>
+        		    	<li><a href="#">最新动态</a></li>
+        		    	<li><a href="#">微论坛</a></li>
+        			</ul>
+        			<ul class="nav navbar-nav navbar-right hidden-sm">
+        				<li><a href="#">个人中心</a></li>
+        			</ul>
+    			</div>
+ 			</div>
+
+		</nav>
+	</header>
+	<!-- /头部区域 -->
+
+	<!-- 广告轮播 -->
+	<section>
+		<div id="main-ad" class="carousel slide" data-ride="carousel">
+  			<!-- 下面的小圆点 -->
+  			<ol class="carousel-indicators">
+  			  <li data-target="#main-ad" data-slide-to="0" class="	active"	></li>
+  			  <li data-target="#main-ad" data-slide-to="1"></li>
+  			  <li data-target="#main-ad" data-slide-to="2"></li>
+  			  <li data-target="#main-ad" data-slide-to="3"></li>
+  			</ol>
+		
+  			<!-- 轮播项 -->
+  			<div class="carousel-inner" role="listbox">
+  				<!-- data（html5属性）用来记录大图或小图的位置 参见"main.js"文件第15行   -->
+
+  			    <div class="item active" data-lg-Image="img/slide_01_2000x410.jpg" data-sx-Image="img/slide_01_640x340.jpg">
+  			     	<div class="carousel-caption">
+  			     		图片1标题
+  			     	</div>	 	
+  			    </div>
+  		  		<div class="item" data-lg-Image="img/slide_02_2000x410.jpg" data-sx-Image="img/slide_02_640x340.jpg">
+  		  		  	<div class="carousel-caption">
+  		  		  	 	图片2标题
+  		  		  	</div>
+  		  		</div>
+  		  		  
+  		  		<div class="item" data-lg-Image="img/slide_03_2000x410.jpg" data-sx-Image="img/slide_03_640x340.jpg">
+  		  		  	
+  		  		  	<div class="carousel-caption">
+  		  		  	 	图片3标题
+  		  		  	</div>
+  		  		</div>
+  		  		<div class="item" data-lg-Image="img/slide_04_2000x410.jpg" data-sx-Image="img/slide_04_640x340.jpg">
+  		  		  	
+  		  		  	<div class="carousel-caption">
+  		  		  	 	图片4标题
+  		  		  	</div>
+  		  		</div>
+  		  	
+  			</div>
+
+ 			<!-- 左右控制按钮 -->
+ 			<a class="left carousel-control" href="#main-ad" role="button" data-slide="prev">
+ 			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><span>
+ 			  <span class="sr-only">上一张</span>
+ 			</a>
+ 			<a class="right carousel-control" href="#main-ad" rol="button" data-slide="next">
+ 			   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+ 			   <span class="sr-only">下一张</span>
+ 			 </a>
+		</div>
+	</section>
+	<!-- /广告轮播 -->
+
+	<!-- 特色介绍 -->
+	<section id="tese">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<a href="#">
+						<div class="media">
+					    	<div class="media-left">
+					    		<i class="icon-uniE907"></i>
+					    	</div>
+					    	<div class="media-body">
+					        	<h4 class="media-heading">支付交易保障</h4>
+					        	<p>银联支付全程保证安全</p>
+					    	</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a href="#">
+						<div class="media">
+					    	<div class="media-left">
+					    		<i class="icon-uniE907"></i>
+					    	</div>
+					    	<div class="media-body">
+					        	<h4 class="media-heading">支付交易保障</h4>
+					        	<p>银联支付全程保证安全</p>
+					    	</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a href="#">
+						<div class="media">
+					    	<div class="media-left">
+					    		<i class="icon-uniE907"></i>
+					    	</div>
+					    	<div class="media-body">
+					        	<h4 class="media-heading">支付交易保障</h4>
+					        	<p>银联支付全程保证安全</p>
+					    	</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a href="#">
+						<div class="media">
+					    	<div class="media-left">
+					    		<i class="icon-uniE907"></i>
+					    	</div>
+					    	<div class="media-body">
+					        	<h4 class="media-heading">支付交易保障</h4>
+					        	<p>银联支付全程保证安全</p>
+					    	</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a href="#">
+						<div class="media">
+					    	<div class="media-left">
+					    		<i class="icon-uniE907"></i>
+					    	</div>
+					    	<div class="media-body">
+					        	<h4 class="media-heading">支付交易保障</h4>
+					        	<p>银联支付全程保证安全</p>
+					    	</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a href="#">
+						<div class="media">
+					    	<div class="media-left">
+					    		<i class="icon-uniE907"></i>
+					    	</div>
+					    	<div class="media-body">
+					        	<h4 class="media-heading">支付交易保障</h4>
+					        	<p>银联支付全程保证安全</p>
+					    	</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /特色介绍 -->
+	<!-- 立即预约 -->
+	<section id="ljyy">
+		<div class="container">
+			<p class="pull-left">
+				<i class="icon-uniE906"></i>
+				现在有<span>458</span>人在排队，累计预约交易成功<span>7369</span>次。什么是预约投标?
+				<a href="#">立即预约</a>
+			</p>
+			<p class="pull-right hidden-sm hidden-xs">
+				<a href="#">
+					<i class="icon-uniE905"></i>
+					微金所企业宣传片
+				</a>
+			</p>
+		</div>
+	</section>
+	<!-- /立即预约 -->
+	<!-- 产品推荐 -->
+	<section id=production>
+	
+	<!-- tabs导航标签局部横向滚动 -->
+	<!-- 1.要给ul一个容器.ul-wrap，让ul有横向滚动条 -->
+	<!-- 2.设置ul的动态宽度，以增加或减少标签项 -->
+	  <div class="container">
+	  		<!-- Nav tabs导航标签 -->
+	  		<div class="ul-wrap">
+	  			<ul class="nav nav-tabs" role="tablist">
+	  			  	  		<li role="presentation" class="active"><a href="#tab_01" aria-controls="tab_01" role="tab" data-toggle="tab">特别推荐</a></li>
+	  			  	  		<li role="presentation"><a href="#tab_02" aria-controls="tab_02" role="tab"data-toggle="tab">微投贷</a></li>
+	  			  	  		<li role="presentation"><a href="#tab_03" aria-controls="tab_03" role="tab" data-toggle="tab">微小宝</a></li>
+	  			  	  		<li role="presentation"><a href="#tab_04" aria-controls="tab_04" role="tab" data-toggle="tab">微消费</a></li>
+	  			  	  		<li role="presentation"><a href="#tab_05" aria-controls="tab_05" role="tab" data-toggle="tab">微增利</a></li>
+	  			  	  		<li role="presentation"><a href="#tab_06" aria-controls="tab_06" role="tab" data-toggle="tab">微金宝</a></li>
+	  			  	  		<li role="presentation"><a href="#tab_07" aria-controls="tab_07" role="tab" data-toggle="tab">微转让</a></li>
+	  			  	  		<li class="pull-right hidden-xs hidden-sm"><a href="#">更多...</a></li>
+	  			</ul>
+	  		</div>
+	  		<!-- Tab panes选项面板 -->
+	  		<div class="tab-content">
+	  	  		<div role="tabpanel" class="tab-pane active fade in" id="tab_01">
+	  	  			<div class="row">
+	  	  					<div class="col-xs-12 col-sm-6 col-md-4">
+								<div class="panel panel-colin active">
+								   <!-- Default panel contents -->
+								   <div class="panel-heading">
+								   		<p class="tooltips">
+											<a class="badge badge-one" href="#">京</a>
+											<a class="badge badge-two" href="#">沪</a>
+								   		</p>
+								   	   <p><strong>8</strong><sub>%</sub></p>
+								   	   <p><span>年利率</span></p>
+								   </div>
+								   <div class="panel-body">
+								    	<h4>新手体验表0899期</h4>
+								    	<div class="row">
+								    		<div class="col-xs-6 pull-left">
+												<p>起投金(元)</p>
+												<p><strong>0.01</strong><sub>万</sub></p>
+								    		</div>
+								    		<div class="col-xs-6 pull-right">
+												<p>起投金(元)</p>
+												<p><strong>0.01</strong><sub>万</sub></p>
+								    		</div>
+											<div class="col-xs-6 pull-left">
+												<p>起投金(元)</p>
+												<p><strong>0.01</strong><sub>万</sub></p>
+								    		</div>
+								    		<div class="col-xs-6 pull-right">
+												<p>起投金(元)</p>
+												<p><strong>0.01</strong><sub>万</sub></p>
+								    		</div>
+
+								    	</div>
+								  
+								   </div>
+								</div>
+	  	  				</div>
+						
+	  	  				<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="panel panel-colin">
+								   <!-- Default panel contents -->
+								   <div class="panel-heading">
+								   		<p class="tooltips">
+											<a class="badge badge-one"data-toggle="tooltip" data-placement="top" title="北京欢迎你" href="#">京</a>
+											<a class="badge badge-two" data-toggle="tooltip" data-placement="top" title="上海欢迎你" href="#">沪</a>
+								   		</p>
+								   	   <p><strong>8</strong><sub>%</sub></p>
+								   	   <p><span>年利率</span></p>
+								   </div>
+								   <div class="panel-body">
+								    	<h4>新手体验表0899期</h4>
+								    	<div class="row">
+								    		<div class="col-xs-6 pull-left">
+												<p>起投金(元)</p>
+												<p><strong>0.01</strong><sub>万</sub></p>
+								    		</div>
+								    		<div class="col-xs-6 pull-right">
+												<p>起投金(元)</p>
+												<p><strong>0.01</strong><sub>万</sub></p>
+								    		</div>
+											<div class="col-xs-6 pull-left">
+												<p>起投金(元)</p>
+												<p><strong>0.01</strong><sub>万</sub></p>
+								    		</div>
+								    		<div class="col-xs-6 pull-right">
+												<p>起投金(元)</p>
+												<p><strong>0.01</strong><sub>万</sub></p>
+								    		</div>
+
+								    	</div>
+								  
+								   </div>
+								</div>
+	  	  				</div>
+	  	  				<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="panel panel-colin">
+							   <!-- Default panel contents -->
+							   <div class="panel-heading">Panel heading</div>
+							   <div class="panel-body">
+							    <p>...</p>
+							   </div>
+							</div>
+	  	  				</div>
+	  	  				<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="panel panel-colin">
+							   <!-- Default panel contents -->
+							   <div class="panel-heading">Panel heading</div>
+							   <div class="panel-body">
+							    <p>...</p>
+							   </div>
+							</div>
+	  	  				</div>
+	  	  				<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="panel panel-colin">
+							   <!-- Default panel contents -->
+							   <div class="panel-heading">Panel heading</div>
+							   <div class="panel-body">
+							    <p>...</p>
+							   </div>
+							</div>
+	  	  				</div>
+	  	  				<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="panel panel-colin">
+							   <!-- Default panel contents -->
+							   <div class="panel-heading">Panel heading</div>
+							   <div class="panel-body">
+							    <p>...</p>
+							   </div>
+							</div>
+	  	  				</div>
+						
+	  	  			</div>	
+	  	  		</div>
+	  	  		<div role="tabpanel" class="tab-pane fade" id="tab_02">BBBBB</div>
+	  	  		<div role="tabpanel" class="tab-pane fade" id="tab_03">CCCCC</div>
+	  	  		<div role="tabpanel" class="tab-pane fade" id="tab_04">DDDDD</div>
+	  	  		<div role="tabpanel" class="tab-pane fade" id="tab_05">DDDDD</div>
+	  	  		<div role="tabpanel" class="tab-pane fade" id="tab_06">DDDDD</div>
+	  	  		<div role="tabpanel" class="tab-pane fade" id="tab_07">DDDDD</div>
+	  		</div>
+
+	  </div>
+
+	</section>
+	<!-- /产品推荐 -->
+
+	<!-- 新闻列表 -->
+	<section id="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-md-offset-3">
+					<div class="news_title">
+						
+					</div>
+				</div>
+				<div class="col-md-2">
+					<ul class="nav nav-pills nav-stacked">
+					  <li role="presentation" class="active"><a data-title="全部新闻" href="#news01" data-toggle="tab"><i class="icon-news01"></i></a></li>
+					  <li role="presentation"><a data-title="传媒新闻" href="#news02" data-toggle="tab"><i class="icon-news02"></i></a></li>
+					  <li role="presentation"><a data-title="行业资讯" href="#news03" data-toggle="tab"><i class="icon-news03"></i></a></li>
+					  <li role="presentation"><a data-title="动态公告" href="#news04" data-toggle="tab"><i class="icon-news04"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					 <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane fade in active" id="news01">
+					    <ul>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    </ul>
+						</div>
+					    <div role="tabpanel" class="tab-pane fade" id="news02">
+							<ul>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    </ul>
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade" id="news03">
+							<ul>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    </ul>
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade" id="news04">
+					    	<ul>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    	<li><a href="">微金所发钱了，快来抢！！！</a></li>
+					    </ul>
+					    </div>
+					  </div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<!-- /新闻列表 -->
+
+
+	<!-- 合作伙伴 -->
+	<section id="hzhb">
+		<div class="container text-center">
+			<h3>合作伙伴</h3>
+			<ul>
+				<li><a href="#"><i class="icon-uniE930"></i></a></li>
+				<li><a href="#"><i class="icon-uniE930"></i></a></li>
+				<li><a href="#"><i class="icon-uniE930"></i></a></li>
+				<li><a href="#"><i class="icon-uniE930"></i></a></li>
+				<li><a href="#"><i class="icon-uniE930"></i></a></li>
+				<li><a href="#"><i class="icon-uniE930"></i></a></li>
+				<li><a href="#"><i class="icon-uniE930"></i></a></li>
+				<li><a href="#"><i class="icon-uniE930"></i></a></li>
+				<li><a href="#"><i class="icon-uniE930"></i></a></li>
+			</ul>
+		</div>
+	</section>
+	<!-- /合作伙伴 -->
+	<!-- /脚注区域 -->
+	<footer id="footer">
+		
+	</footer>
+	<!-- /脚注区域 -->
+
+	<!-- 模态框 -->
+		
+	<!-- Modal -->
+	<div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">亲,欢迎登录</h4>
+	      </div>
+	      <div class="modal-body">
+		       <form class="form-horizontal">
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+				    <div class="col-sm-10">
+				      <input type="email" class="form-control" id="inputEmail3" placeholder="请输入邮箱">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+				    <div class="col-sm-10">
+				      <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <div class="checkbox">
+				        <label>
+				          <input type="checkbox"> Remember me
+				        </label>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="submit" class="btn btn-default">Sign in</button>
+				    </div>
+				  </div>
+				</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!-- /模态框 -->
+
+	<!-- script文件放在body的最下面,是为了等页面加载完毕后再执行js -->
+	<script src="lib/jquery/jquery.js"></script>
+	 <script src="lib/bootstrap/js/bootstrap.js"></script>
+	 <script src="js/main.js"></script>
+</body>
+</html>
